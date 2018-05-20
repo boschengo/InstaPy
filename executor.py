@@ -21,12 +21,12 @@ def sleep_between_executions(min_sleep=3, max_sleep=7):
 
 
 def account_farming(selected_account_var):
-    if random.randint(0, 1):
-        like_feed_user = LikeFeedUser(selected_account_var, executor_config.accounts_password)
-        like_feed_user.do_feed_magic()
-    if random.randint(0, 1):
-        like_feed_user = LikeFollowTags(selected_account_var, executor_config.accounts_password)
-        like_feed_user.do_tags_magic()
+    # if random.randint(0, 1):
+    like_feed_user = LikeFeedUser(selected_account_var, executor_config.accounts_password)
+    like_feed_user.do_feed_magic()
+    # if random.randint(0, 1):
+    like_feed_user = LikeFollowTags(selected_account_var, executor_config.accounts_password)
+    like_feed_user.do_tags_magic()
     # if random.randint(0, 1):
     #     like_feed_user = LikeFollowers(selected_account_var, executor_config.accounts_password)
     #     like_feed_user.do_my_followers_magic()
