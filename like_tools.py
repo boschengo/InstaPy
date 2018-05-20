@@ -15,7 +15,7 @@ class LikeFollowers:
         self.session = None
 
     def get_session(self):
-        self.session = InstaPy(username=self.username, password=self.password, headless_browser=False, multi_logs=True)
+        self.session = InstaPy(username=self.username, password=self.password, headless_browser=True, multi_logs=True)
 
     def set_relationship_bounds(self):
         self.session.set_relationship_bounds(enabled=True, potency_ratio=None, delimit_by_numbers=True,
